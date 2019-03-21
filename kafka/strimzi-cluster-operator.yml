@@ -2120,6 +2120,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
 metadata:
   name: strimzi-cluster-operator-entity-operator-delegation
+  namespace: kafka
   labels:
     app: strimzi
 subjects:
@@ -2152,6 +2153,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
 metadata:
   name: strimzi-cluster-operator-topic-operator-delegation
+  namespace: kafka
   labels:
     app: strimzi
 subjects:
@@ -2348,6 +2350,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
 metadata:
   name: strimzi-cluster-operator
+  namespace: kafka
   labels:
     app: strimzi
 subjects:
@@ -2709,6 +2712,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: strimzi-cluster-operator
+  namespace: kafka
   labels:
     app: strimzi
 spec:
